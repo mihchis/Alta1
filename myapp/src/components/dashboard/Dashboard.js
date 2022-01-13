@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo.png";
-import { navLists } from "../assets/dummydata/dashBoardData";
+import Logo from "../../assets/images/logo.png";
+import { navLists } from "../../assets/dummydata/dashBoardData";
 import Button from "./button";
 
 const Dashboard = () => {
@@ -45,7 +45,7 @@ const Dashboard = () => {
                         >
                             <i className="bx bx-log-out dashboard-logout_icon"></i>
                             <span className="dashboard-logout_content">
-                                Đằng xuất
+                                Đăng xuất
                             </span>
                         </Button>
                     </Link>

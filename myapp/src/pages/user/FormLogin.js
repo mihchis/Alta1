@@ -1,7 +1,7 @@
 import React, { useState, memo } from "react";
 import { users } from "../../assets/dummydata/userData";
 import { Link } from "react-router-dom";
-import Button from "../../components/button";
+import Button from "../../components/dashboard/button";
 import { SetPass } from "./SetPass";
 import RestPass from "./ResetPass";
 const FormLogin = ({ account, password, email, resetpass }) => {

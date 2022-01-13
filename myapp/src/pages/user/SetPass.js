@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../../components/button";
+import Button from "../../components/dashboard/button";
 import { Link } from "react-router-dom";
 import { users } from "../../assets/dummydata/userData";
 export const SetPass = () => {

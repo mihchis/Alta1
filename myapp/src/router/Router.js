@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import PageLogin from "../pages/user/PageLogin";
 import PageForgot from "../pages/user/PageForgot";
 import Home from "../pages/home/Home";
-import Info from "../pages/home/Info";
+import Info from "../pages/home/Infor";
 import ChartDashBoard from "../pages/home/ChartDashBoard";
-import Chart from "../components/chart";
+import Chart from "../components/dashboard/chart";
 const Router = () => {
     return (
         <div className="grid wide">

@@ -2,7 +2,7 @@ import React from "react";
 import DashboardRight from "../HomeRight/DashboardRight";
 import DashboardCenter from "./DashboardCenter";
 import HeaderInfo from "./HeaderInfo";
-import Chart from "../../components/chart";
+import Chart from "../../components/dashboard/chart";
 const ChartDashBoard = () => {
     return (
         <div className="mainHome">

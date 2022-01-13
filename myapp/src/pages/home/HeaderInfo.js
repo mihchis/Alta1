@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import userAvatar from "../../assets/images/userAvatar.png";
-import NotifyBell from "../../components/NotifyBell";
+import NotifyBell from "../../components/dashboard/NotifyBell";
 import { notifyBells } from "../../assets/dummydata/UserNotifyData";
 import { Link } from "react-router-dom";
 const HeaderInfo = ({ title, avatar, fullname, bgcolorleft, bgcolorright }) => {
