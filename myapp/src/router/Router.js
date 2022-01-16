@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import PageLogin from "../pages/user/PageLogin";
-import PageForgot from "../pages/user/PageForgot";
-import Home from "../pages/home/Home";
-import Info from "../pages/home/Infor";
-import ChartDashBoard from "../pages/home/ChartDashBoard";
-import Chart from "../components/dashboard/chart";
+import PageLogin from "../pages/login/PageLogin";
+import PageForgot from "../pages/login/PageForgot";
+import Home from "../pages/information/Home";
+import Info from "../pages/information/Infor";
+import ChartDashBoard from "../pages/dashboard/ChartDashBoard";
+import Chart from "../assets/chartn/chart";
 const Router = () => {
     return (
         <div className="grid wide">

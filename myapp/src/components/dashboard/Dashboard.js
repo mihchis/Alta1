@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
-import { navLists } from "../../assets/dummydata/dashBoardData";
+import Logo from "../../assets/icon/logo.png";
+import { navLists } from "../../assets/dummydata/menubar";
 import Button from "./button";
 
 const Dashboard = () => {
