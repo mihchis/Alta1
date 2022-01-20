@@ -113,3 +113,4 @@ const FormLogin = ({ account, password, email, resetpass }) => {
 };
 
 export default memo(FormLogin);
+

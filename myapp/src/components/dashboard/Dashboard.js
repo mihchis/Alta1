@@ -4,7 +4,7 @@ import Logo from "../../assets/icon/logo.png";
 import { navLists } from "../../assets/dummydata/menubar";
 import Button from "./button";
 
-const Dashboard = () => {
+const DashBoard = () => {
     const path = window.location.pathname.slice(1);
 
     return (
@@ -56,4 +56,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default DashBoard;

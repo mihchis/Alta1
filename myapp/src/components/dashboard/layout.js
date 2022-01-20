@@ -7,5 +7,6 @@ function Layout() {
             <Router />
         </BrowserRouter>
     );
-}
+};
+
 export default Layout;

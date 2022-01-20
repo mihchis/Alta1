@@ -6,6 +6,7 @@ const Home = () => {
     return (
         <div className="home row no-gutters">
             <DashBoard />
+
             <Outlet />
         </div>
     );

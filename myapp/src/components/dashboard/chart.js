@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
 import DropDown from "./drop";
 
-import { lineOptions, data } from "../../assets/chart/chartdata";
+import { lineOptions, data } from "../../assets/chartn/chartdata";
 
 const Chart2 = () => {
     const timer = new Date();

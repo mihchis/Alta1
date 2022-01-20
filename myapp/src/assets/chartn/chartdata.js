@@ -1,3 +1,13 @@
+// var A = [1, 13, 19, 31];
+//  var xValues = [];
+// for (let i = 1; i <= 35; i++) {
+//     if (A.includes(i)) {
+//         xValues.push(i);
+//     } else {
+//         xValues.push("");
+//     }
+// }
+
 const ctx = document.createElement("canvas").getContext("2d");
 const gradient = ctx.createLinearGradient(0, 0, 0, 400);
 gradient.addColorStop(1, "rgba(206, 221, 255, 0)");

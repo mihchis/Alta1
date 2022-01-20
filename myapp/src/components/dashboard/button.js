@@ -12,7 +12,7 @@ const STYLES = [
 ];
 
 const SIZES = ["btn--medium", "btn--large", "btn--XL"];
-const button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
+const Button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)
         ? buttonStyle
         : STYLES[0];
@@ -29,4 +29,4 @@ const button = ({ children, type, onClick, buttonStyle, buttonSize }) => {
         </button>
     );
 };
-export default memo(button);
+export default memo(Button);

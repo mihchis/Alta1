@@ -7,7 +7,7 @@ import setting from "../icon/setting.png";
 
 export const navLists = [
     { display: "Dashboard", icon: dashboard, path: "dashboard" },
-    { display: "Thiết bị", icon: thietbi, path: "devices" },
+    { display: "Thiết bị", icon: thietbi, path: "equipment" },
     { display: "Dịch vụ", icon: dichvu, path: "service" },
     { display: "Cấp số", icon: capso, path: "randomNumber" },
     { display: "Báo cáo", icon: baocao, path: "announce" },
