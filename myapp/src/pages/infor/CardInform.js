@@ -1,7 +1,7 @@
 import React from "react";
 import userAvatarBig from "../../assets/icon/userAvatarBig.png";
 import camera from "../../assets/icon/camera.png";
-const CardInfo = ({ user }) => {
+const CardInform = ({ user }) => {
     const infoForm = [
         { label: "Tên người dùng", input: user.fullname },
         { label: "Tên đăng nhập", input: user.name },
@@ -48,4 +48,4 @@ const CardInfo = ({ user }) => {
     );
 };
 
-export default CardInfo;
+export default CardInform;

@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
-import DropDown from "./drop";
+import DropDown from "./dropbox";
 
 import { lineOptions, data } from "../../assets/chartn/chartdata";
 
-const Chart2 = () => {
+const Linechart = () => {
     const timer = new Date();
     const month = timer.getMonth() + 1;
     const year = timer.getFullYear();
     const [selected, setSelected] = useState("ngày");
-    let yValues = [
-        2400, 2700, 3000, 2400, 3600, 3900, 4200, 4300, 4400, 4500, 4400, 4300,
-        3100, 3900, 3600, 2811, 3500, 3770, 3800, 3500, 4400, 4300, 4200, 3900,
-        2900, 3400, 3500, 3770, 3800, 3500, 2800, 4200, 3900, 6000,
-    ];
+    let yValues = [2400,3000,6000,5600,4800];
     let xValues = [];
     if (selected === "ngày") {
         let A = [1, 13, 19, 31];
@@ -37,11 +33,9 @@ const Chart2 = () => {
     return (
         <div className="dashboard-center-chart">
             <div className="dashboard-center-chart_heading">
-                <h1> Bảng thống kê theo {selected}</h1>
+                <h1>Bảng thống kê theo {selected}</h1>
                 <div className="dashboard-center-chart_warp">
-                    <span className="dashboard-center-chart_span">
-                        Xem theo
-                    </span>
+                    <span className="dashboard-center-chart_span">Xem theo</span>
                     <DropDown
                         selected={selected}
                         setSelected={setSelected}
@@ -49,9 +43,7 @@ const Chart2 = () => {
                     />
                 </div>
             </div>
-            <div className="dashboard-center-chart_timer">
-                Tháng {month}/{year}
-            </div>
+            <div className="dashboard-center-chart_timer">tháng {month}/{year}</div>
             <div className="dashboard-center-chart_warp">
                 <Line data={data(xValues, yValues)} options={lineOptions} />
                 <div className="dashboard-center-chart_quantily">sl</div>
@@ -62,4 +54,4 @@ const Chart2 = () => {
     );
 };
 
-export default Chart2;
+export default Linechart;

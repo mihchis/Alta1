@@ -18,8 +18,8 @@ const FormLogin = ({ account, password, email, resetpass }) => {
 
         if (result.length > 0) {
             setisError(true);
-            setPath("/info");
-            console.log("đăng nhập thành công");
+            setPath("/infor");
+            console.log("Đăng nhập thành công");
         } else {
             setisError(false);
             setStatus("Sai mật khẩu hoặc tên đăng nhập");

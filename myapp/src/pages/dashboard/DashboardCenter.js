@@ -1,5 +1,6 @@
 import React from "react";
-import Chart2 from "../../components/dashboard/chart";
+import Linechart from "../../components/dashboard/Linechart";
+
 
 const DashboardCenter = () => {
     const statisticals = [
@@ -67,8 +68,7 @@ const DashboardCenter = () => {
                     </div>
                 ))}
             </div>
-
-            <Chart2 />
+            <Linechart />
         </div>
     );
 };

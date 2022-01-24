@@ -1,16 +1,16 @@
 import React from "react";
-import DashboardRight from "../sidebar/sidebar";
+import Sidebar from "./sidebar";
 import DashboardCenter from "./DashboardCenter";
-import HeaderInfo from "../information/HeaderInfo";
+import HeaderInform from "../infor/HeaderInform";
 
 const ChartDashBoard = () => {
     return (
         <div className="mainHome">
-            <HeaderInfo title="Dashboard" bgcolorright="#fff" />
+            <HeaderInform title="Dashboard" bgcolorright="#fff" />
             <div className="mainHome-wapper">
                 <DashboardCenter />
 
-                <DashboardRight />
+                <Sidebar />
             </div>
         </div>
     );
