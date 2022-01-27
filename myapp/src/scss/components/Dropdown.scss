@@ -1,8 +1,8 @@
 .dropdown {
-    width: 106px;
+    width: 100%;
     user-select: none;
     position: relative;
-
+    background-color: $white;
     &-btn {
         @include flex(center, space-between);
         padding: 10px 12px 10px 12px;
@@ -19,8 +19,7 @@
     }
     &-content {
         position: absolute;
-        top: 2;
-        left: 0;
+        background-color: $white;
         padding: 8px 0px;
         font-size: 16px;
         line-height: 24px;
