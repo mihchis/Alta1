@@ -12,7 +12,7 @@ const ControlDevice = () => {
                         up
                         selected={state.selectedActive}
                         setSelected={state.setSelectedActive}
-                        options={["Tất cả", "Hoạt động", "Ngừng hoạt dộng"]}
+                        options={["Tất cả", "Hoạt động", "Ngưng hoạt dộng"]}
                     />
                 </div>
                 <div className="controlDevice-warp-item">

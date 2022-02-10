@@ -1,12 +1,25 @@
-import React from "react";
+
 import { BrowserRouter } from "react-router-dom";
 import Router from "../../router/Router";
-function Layout() {
+import DashBoard from "./Dashboard";
+import { createContext, React, useState} from "react";
+
+
+export const LoginContext = createContext();
+const Layout = () => {
+    const [loggedIn, setLoggedIn] = useState(true);
     return (
         <BrowserRouter>
-            <Router />
+            <LoginContext.Provider value={{ loggedIn, setLoggedIn }}>
+                <div className="grid wide">
+                    <div className="home row no-gutters">
+                        <DashBoard />
+
+                        <Router />
+                    </div>
+                </div>
+            </LoginContext.Provider>
         </BrowserRouter>
     );
 };
-
 export default Layout;

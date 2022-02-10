@@ -1,43 +1,67 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import {React, useContext} from "react";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/icon/logo.png";
 import { navLists } from "../../assets/dummydata/menubar";
 import Button from "./button";
+import {LoginContext} from "./layout";
+
 
 const DashBoard = () => {
-    const path = window.location.pathname.slice(1);
+    const data = useContext(LoginContext);
 
-    return (
-        // <div className=" col l-2" >
+    const handleLogout = (e) => {
+        data.setLoggedIn(false);
+    };
+
+    return data.loggedIn ? (
         <div className="dashboard">
             <div className="dashboard-logo">
                 <img src={Logo} alt="" />
             </div>
             <div className="dashboard-list">
                 {navLists.map((item) => (
-                    <Link
-                        to={item.path}
-                        className={
-                            path === item.path
-                                ? "dashboard-list_item active"
-                                : "dashboard-list_item "
-                        }
-                        key={item.display}
-                    >
-                        <img src={item.icon} alt="" />
-                        <span className="dashboard-list_content">
-                            {item.display}
-                        </span>
-                        {item.display === "Cài đặt hệ thống" ? (
-                            <i className="bx bx-dots-vertical-rounded dashboard-list_setting"></i>
-                        ) : (
-                            ""
-                        )}
-                    </Link>
+                    <>
+                        <NavLink
+                            to={item.path}
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "active dashboard-list_item"
+                                    : "dashboard-list_item "
+                            }
+                            key={`dashboard - ${item.path}`}
+                        >
+                            <img src={item.icon} alt="" />
+                            <span className="dashboard-list_content">
+                                {item.display}
+                            </span>
+                            {item.display === "Cài đặt hệ thống" ? (
+                                <i className="bx bx-dots-vertical-rounded dashboard-list_setting"></i>
+                            ) : (
+                                ""
+                            )}
+                            {item.childrens && (
+                                <ul className="dashboard-list2">
+                                    {item.childrens.map((child) => (
+                                        <NavLink
+                                            to={child.path}
+                                            className={({ isActive }) =>
+                                                isActive ? "active " : ""
+                                            }
+                                            key={child.path}
+                                        >
+                                            <li key={child.display}>
+                                                {child.display}
+                                            </li>
+                                        </NavLink>
+                                    ))}
+                                </ul>
+                            )}
+                        </NavLink>
+                    </>
                 ))}
 
                 <div className="dashboard-logout">
-                    <Link to="/login">
+                    <Link to="/" onClick={() => handleLogout()} key="logout">
                         <Button
                             buttonSize="btn--XL"
                             type="button"
@@ -52,7 +76,8 @@ const DashBoard = () => {
                 </div>
             </div>
         </div>
-        // </div>
+    ) : (
+        ""
     );
 };
 
