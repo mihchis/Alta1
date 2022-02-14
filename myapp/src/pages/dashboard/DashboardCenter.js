@@ -68,6 +68,7 @@ const DashboardCenter = () => {
                     </div>
                 ))}
             </div>
+
             <Linechart />
         </div>
     );

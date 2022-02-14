@@ -1,7 +1,6 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Equipments } from "../../assets/dummydata/equipData";
-import HeaderInform from "../infor/HeaderInform";
 import FormDetail from "../../components/dashboard/fromdetail";
 
 const DetailDevice = () => {
@@ -28,7 +27,7 @@ const DetailDevice = () => {
             dataOrigin={Equipments}
         />
         // <div className="deviceManager">
-        //     <HeaderInfo
+        //     <HeaderInform
         //         title="Chi tiết thiết bị"
         //         task={["Thiết bi", "Danh sách thiết bị", ""]}
         //     />

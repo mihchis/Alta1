@@ -31,7 +31,7 @@ for (let i = 2010001; i < 2019999; i++) {
         toDate: "14:35 - 12/11/2021",
         status: get_random(statusRan),
         phone: "0945321348",
-        email: "tri@vanlanguni.vn",
+        email: "tri.197CT10089@vanlanguni.vn",
         origin: i % 2 === 0 ? "Kiosk" : "Hệ thống",
     });
 }

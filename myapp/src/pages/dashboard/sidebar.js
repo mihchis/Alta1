@@ -8,7 +8,6 @@ import {
 } from "../../assets/chartn/chartcdata";
 import Datepicker from "../../components/dashboard/dateb";
 
-
 const Sidebar = () => {
     return (
         <div className="dashboard-right">
@@ -65,7 +64,6 @@ const Sidebar = () => {
                                     Thiết bị
                                 </span>
                             </div>
-                            
                         </div>
                     </div>
 
@@ -78,8 +76,8 @@ const Sidebar = () => {
                                 {item.type === 1
                                     ? "Đang hoạt động"
                                     : "Đã sử dụng"}
-                                                     
                             </div>
+
                             <span style={{ color: item.color }}>
                                 {item.active}
                             </span>
@@ -115,10 +113,10 @@ const Sidebar = () => {
                     </div>
                 </div>
             ))}
-            
-          <Datepicker />
+            <Datepicker />
         </div>
     );
 };
+
 
 export default Sidebar;

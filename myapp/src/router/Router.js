@@ -29,6 +29,7 @@ import AccountManager from "../pages/quanly/acc/accmanager";
 import AddAccount from "../pages/quanly/acc/addacc";
 
 import UserManager from "../pages/quanly/user/usermana";
+
 const Router = () => {
     let routes = useRoutes([
         { path: "/", element: <PageLogin /> },
@@ -44,9 +45,8 @@ const Router = () => {
         {
             element: <ProtectedRouters />,
             children: [
-                { path: "/dashboard", element: <Infor /> },
                 { path: "/infor", element: <Infor /> },
-
+                { path: "/dashboard", element: <ChartDashBoard/> },
                 // equipment
                 {
                     path: "/equipment",

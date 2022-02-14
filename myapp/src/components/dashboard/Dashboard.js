@@ -1,10 +1,9 @@
 import {React, useContext} from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/icon/logo.png";
-import { navLists } from "../../assets/dummydata/menubar";
+import { navLists } from "../../assets/dummydata/dashBoardData";
 import Button from "./button";
 import {LoginContext} from "./layout";
-
 
 const DashBoard = () => {
     const data = useContext(LoginContext);

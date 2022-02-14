@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import DropDown from "../../components/dashboard/dropbox";
 import HeaderInform from "../infor/HeaderInform";
 import { nameSer } from "../../assets/dummydata/capsodata";
-import button from "../../components/dashboard/button";
 import { Link } from "react-router-dom";
 import ModeRandom from "./modecapso";
-import { Button } from "@mui/material";
+import Button from "../../components/dashboard/button";
 
 const AddRandom = () => {
     const [nameService, setNameService] = useState("Chọn dịch vụ");

@@ -1,9 +1,9 @@
-import baocao from "../images/baocao.png";
-import capso from "../images/capso.png";
-import dashboard from "../images/dashboard.png";
-import dichvu from "../images/dichvu.png";
-import thietbi from "../images/thietbi.png";
-import setting from "../images/setting.png";
+import baocao from "../icon/baocao.png";
+import capso from "../icon/capso.png";
+import dashboard from "../icon/dashboard.png";
+import dichvu from "../icon/dichvu.png";
+import thietbi from "../icon/thietbi.png";
+import setting from "../icon/setting.png";
 
 export const navLists = [
     { display: "Dashboard", icon: dashboard, path: "dashboard" },

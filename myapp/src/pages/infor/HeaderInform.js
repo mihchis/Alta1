@@ -46,7 +46,7 @@ const HeaderInform = ({
                     <i className="bx bxs-bell headerInfo-right_bell"></i>
                     <p className="notify-bridge"></p>
                 </span>
-                <Link to="/infor">
+                <Link to="/info">
                     <div className="headerInfo-right_info">
                         <span className="headerInfo-avatar">
                             <img src={avatar ? avatar : userAvatar} alt="" />

@@ -3,6 +3,7 @@ import DropDown from "../../components/dashboard/dropbox";
 import Button from "../../components/dashboard/button";
 import { Link } from "react-router-dom";
 import DropDownSelect from "../../components/dashboard/dropselec";
+
 const FormAddDevice = ({ update, data }) => {
     const FillInfors = [
         { state: "id", display: "Mã thiết bị", type: "input" },
