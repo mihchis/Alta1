@@ -45,7 +45,7 @@ const Router = () => {
         {
             element: <ProtectedRouters />,
             children: [
-                { path: "/infor", element: <Infor /> },
+                { path: "/info", element: <Infor /> },
                 { path: "/dashboard", element: <ChartDashBoard/> },
                 // equipment
                 {
